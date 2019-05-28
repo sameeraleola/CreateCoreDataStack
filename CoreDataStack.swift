@@ -11,7 +11,7 @@ import CoreData
 class CoreDataStack {
     
     // Make it a shared object
-    static let shared = Stack()
+    static let shared = CoreDataStack()
     
     lazy var container: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "Model")
